@@ -1,9 +1,0 @@
-Physics Theory Club: Exposition of Special Relativity
-
-双击此文件夹中的 index.html，即可使用 Edge、Chrome 或 Firefox 离线打开网站。
-移动或分享网站时，请保留整个 dist 文件夹，包括 assets、style.css 和 app.js。
-
-首页只有 Special Relativity 可以进入。右上角滑块切换中英语言。
-第一格进入洛伦兹变换逐步推导。点击示意图或“下一步”，一次展开一个证明块。
-支持上一步、重看，以及方向键与空格；中英切换会保留当前进度。
-其余三格可放大查看，按 Esc 或右上角 × 关闭；这些章节的详细推导暂未制作。
