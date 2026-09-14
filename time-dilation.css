@@ -1,0 +1,64 @@
+.kin-time-stage{border:0;background:none;padding:12px 18px 8px;min-height:540px}
+.kin-time-stage .kin-step-title{text-align:center;font-size:25px;margin:0}
+.td-continuous{--td-blue:#8ccaff;--td-gold:#efc784}
+.td-scene{max-width:1100px;margin:0 auto}
+.td-scene svg{display:block;width:100%;height:auto;overflow:visible;font-family:"Segoe UI","Microsoft YaHei",sans-serif}
+.td-scene text{text-anchor:middle;font-size:18px;fill:#bbcee4}
+.td-rim{fill:#13263b;stroke:#9bb3cd;stroke-width:2}
+.td-ticks{fill:none;stroke:#839cb8;stroke-width:1.5}
+.td-start{fill:none;stroke:#7891aa;stroke-width:1;stroke-dasharray:3 4}
+.td-hand{fill:none;stroke-width:3;stroke-linecap:round}
+.td-person{fill:none;stroke:#bacfe6;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
+.td-person text{stroke:none;fill:#e3edf9;font-size:25px;font-family:Georgia,serif}
+.td-motion{fill:none;stroke:#8ccaff;stroke-width:1.8}
+.td-scene .td-speed{fill:#8ccaff;font-family:Georgia,serif;font-size:19px}
+.td-scene .td-clock-value{font-size:23px;font-family:"Cambria Math",Georgia,serif;fill:var(--td-blue)}
+.td-scene [data-clock=a] .td-clock-value{fill:var(--td-gold)}
+.td-scene .td-transform-label{font-size:15px;fill:#8ccaff;letter-spacing:.4px}
+.td-reasoning{max-width:790px;min-height:168px;margin:0 auto;text-align:center;color:#d0deef;font-size:18px;line-height:1.8;text-wrap:pretty}
+.td-reasoning em{color:var(--td-blue);font-style:normal}
+.td-math{display:block;font-family:"Cambria Math",Georgia,serif;color:#b2ddff;font-size:28px;line-height:1.55;margin:8px 0}
+.td-math sub{font-size:.6em}
+.td-reasoning small{display:block;color:#9eb6d0;font-size:14px;line-height:1.7;margin:14px auto 0;max-width:710px}
+.td-scale{text-align:center;color:#8ca4be;font-size:12px;margin:20px 0 0;line-height:1.5}
+@media(max-width:760px){
+ .kin-time-stage{padding:12px 0;min-height:0}
+ .kin-time-stage .kin-step-title{font-size:21px}
+ .td-scene{height:auto;aspect-ratio:520/455;overflow:hidden}
+ .td-scene svg{width:192.3077%;max-width:none}
+ .td-scene .td-a{transform:translate(135px,105px)}
+ .td-scene .td-b{transform:translate(385px,105px)}
+ .td-scene .td-transformed{transform:translate(135px,325px)}
+ .td-reasoning{font-size:16px;min-height:0;padding:0 4px}
+ .td-math{font-size:23px}
+ .td-scene .td-transform-label{font-size:16px}
+ .td-scale{font-size:11px}
+}
+
+/* Formulas stay with their physical objects; only the subtitle is replaced. */
+.td-scene .td-formulas text{text-anchor:start;font-family:"Cambria Math",Georgia,serif;font-size:24px;fill:#b2ddff}
+.td-scene .td-formulas-a text{fill:#efc784}
+.td-reasoning{min-height:115px}
+@media(max-width:760px){
+ .td-scene{aspect-ratio:520/570}
+ .td-scene .td-transformed{transform:translate(115px,415px)}
+ .td-scene .td-formulas-a{transform:translate(24px,265px)}
+ .td-scene .td-formulas-b{transform:translate(320px,255px)}
+ .td-scene .td-formulas-transform{transform:translate(210px,394px)}
+ .td-scene .td-formulas text{font-size:21px}
+ .td-scene .td-formulas-transform text{font-size:20px}
+ .td-reasoning{min-height:120px}
+}
+
+.td-transformed .td-dial-label{transform:translateY(60px)}
+
+.lesson-equation{overflow:visible;pointer-events:none}
+.lesson-equation-inner{height:72px;display:flex;align-items:center;color:#b2ddff;font-size:24px}
+.lesson-equation math{font-family:"Cambria Math","STIX Two Math","Latin Modern Math",math;font-size:inherit;margin:0;text-align:left;white-space:nowrap}
+.td-formulas-a .lesson-equation-inner,.lc-a-eq .lesson-equation-inner{color:#efc784}
+@media(max-width:760px){
+ .lesson-equation-inner{font-size:21px}
+ .td-formulas-transform .lesson-equation-inner{font-size:20px}
+ .lc-transform-eq .lesson-equation-inner{font-size:19px}
+ .lc-scene{aspect-ratio:520/855}
+}

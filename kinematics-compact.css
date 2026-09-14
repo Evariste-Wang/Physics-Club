@@ -1,0 +1,64 @@
+/* All lesson content is authored on one 1600 × 900 canvas. */
+body:has(#kin-viewport){overflow:hidden;background:#050b13;min-height:100dvh}
+#kin-viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#050b13}
+#kin-screen{position:relative;width:1600px;height:900px;flex:none;transform-origin:center;background:radial-gradient(ellipse at 85% 5%,#182e4d,transparent 65%),#0c1423;overflow:hidden}
+#kin-screen>header{position:absolute;left:44px;right:44px;top:0;height:55px;min-height:0;margin:0;gap:20px}
+#kin-screen>header .brand{font-size:16px}
+#kin-screen>main{position:absolute;left:44px;top:62px;width:1512px;height:775px;margin:0;max-width:none}
+#kin-screen>footer{position:absolute;left:44px;right:44px;bottom:18px;height:28px;min-height:0;margin:0;padding:10px 0 0;font-size:11px}
+#kin-screen .kinematics{position:relative;height:100%;padding:0}
+#kin-screen .kin-top{height:25px}
+#kin-screen .kin-top a{font-size:13px;padding:3px 0;margin:0}
+#kin-screen .kin-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px;margin:0}
+#kin-screen .kin-heading h1{font-size:34px;white-space:nowrap;margin:0;line-height:1.2}
+#kin-screen .kin-tabs{display:flex;flex:0 0 685px;gap:10px;margin:0}
+#kin-screen .kin-tabs button{padding:12px 14px;text-align:left;font-size:15px;line-height:1.4}
+#kin-screen .kin-tabs button span{display:inline;margin-right:8px;font-size:12px}
+#kin-screen .kin-stage{position:absolute;top:104px;left:0;right:0;height:621px;min-height:0;padding:0;border:0;background:none;user-select:none}
+#kin-screen .kin-step-title{text-align:center;font-size:26px;line-height:34px;margin:0}
+#kin-screen .td-continuous{position:relative;height:585px}
+#kin-screen .td-scene{position:absolute;top:8px;left:0;width:100%;height:450px;max-width:none;margin:0;aspect-ratio:auto;overflow:visible}
+#kin-screen .td-scene svg{display:block;width:100%;height:100%;max-width:none;overflow:visible}
+#kin-screen .td-a{transform:translate(180px,100px) scale(.9)}
+#kin-screen .td-b{transform:translate(1010px,100px) scale(.9)}
+#kin-screen .td-transformed{transform:translate(180px,290px) scale(.9)}
+#kin-screen .td-formulas-a{transform:translate(310px,105px)}
+#kin-screen .td-formulas-b{transform:translate(960px,245px)}
+#kin-screen .td-formulas-transform{transform:translate(390px,267px)}
+#kin-screen .td-transformed .td-dial-label{transform:translateY(30px)}
+#kin-screen .td-transform-label{font-size:16px}
+#kin-screen .lesson-equation-inner{font-size:24px}
+#kin-screen .lc-a{transform:translate(110px,82px) scale(.8)}
+#kin-screen .lc-b{transform:translate(275px,82px) scale(.8)}
+#kin-screen .lc-b-eq{transform:translate(280px,200px)}
+#kin-screen .lc-a-eq{transform:translate(32px,200px)}
+#kin-screen .lc-events{transform:translate(65px,308px) scale(.8)}
+#kin-screen .lc-transform-eq{transform:none}
+#kin-screen .lc-transform-start{transform:translate(470px,100px)}
+#kin-screen .lc-transform-end{transform:translate(835px,100px)}
+#kin-screen .lc-transform-eq .lesson-equation-inner{font-size:22px}
+#kin-screen .lc-math-label .lesson-equation-inner{font-size:20px}
+#kin-screen .td-reasoning{position:absolute;top:467px;left:76px;right:76px;max-width:none;min-height:0;margin:0;padding:0;text-align:center;font-size:18px;line-height:1.55}
+#kin-screen .td-reasoning small{font-size:14px;line-height:1.5;max-width:1300px;margin:8px auto 0}
+#kin-screen .td-scale{position:absolute;bottom:0;left:0;right:0;margin:0;font-size:12px;line-height:18px}
+#kin-screen .kin-foot{position:absolute;bottom:0;left:0;right:0;height:32px;margin:0;gap:18px;font-size:13px;flex-wrap:nowrap}
+#kin-screen .kin-foot button{font-size:14px;padding:6px}
+#kin-screen .kin-desktop-hint{display:inline}
+#kin-screen .kin-touch-back{display:none}
+#kin-screen .kin-progress i{width:14px}
+#kin-screen .kin-context{font-size:15px;line-height:1.5;max-width:none;margin:12px 0}
+#kin-screen .kin-composition{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:28px;min-height:350px;margin:10px 0}
+#kin-screen .kin-figure{width:auto;max-width:none;order:0}
+#kin-screen .kin-figure svg{max-height:340px}
+#kin-screen .kin-equations{grid-column:auto;display:block;font-size:23px}
+#kin-screen .kin-resolution{font-size:17px;line-height:1.5;min-height:0;margin:0 auto}
+
+#kin-screen .va-continuous .lesson-equation-inner{font-size:22px;height:100px}
+#kin-screen .va-continuous .va-small .lesson-equation-inner{font-size:20px;height:55px}
+#kin-screen .va-gold .lesson-equation-inner{color:#efc784}
+#kin-screen .va-result .lesson-equation-inner{color:#aee6cf;font-size:23px}
+#kin-screen .va-example .lesson-equation-inner{color:#aee6cf;font-size:18px}
+#kin-screen .va-normalized .lesson-equation-inner{font-size:20px}
+#kin-screen .va-continuous .td-person text{font-size:22px}
+
+#kin-screen .lesson-inline{font-family:"Cambria Math","STIX Two Math",math;font-size:1em;display:inline math;vertical-align:baseline;color:inherit;white-space:nowrap}

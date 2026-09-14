@@ -1,0 +1,20 @@
+.lc-event-span{fill:none;stroke:#8ccaff;stroke-width:2;stroke-dasharray:4 5}
+.lc-return{fill:none;stroke:#efc784;stroke-width:2}
+.lc-guide{fill:none;stroke:#6e8eaf;stroke-dasharray:3 5}
+.td-scene .lc-a-eq text{fill:#efc784}
+.td-scene .lc-transform-eq text{font-size:23px}
+.lc-continuous .td-reasoning{min-height:115px}
+@media(max-width:760px){
+ .lc-scene{aspect-ratio:520/855}
+ .lc-scene .lc-a{transform:translate(100px,95px)}
+ .lc-scene .lc-b{transform:translate(305px,95px)}
+ .lc-scene .lc-b-eq{transform:translate(320px,177px)}
+ .lc-scene .lc-a-eq{transform:translate(26px,260px)}
+ .lc-scene .lc-events{transform:translate(16px,385px)}
+ .lc-scene .lc-events>text{font-size:16px}
+ .lc-scene .lc-transform-eq{transform:translate(230px,365px)}
+ .lc-scene .lc-transform-eq text{font-size:19px}
+ .lc-scene .lc-a-eq text,.lc-scene .lc-b-eq text{font-size:21px}
+}
+
+.lc-math-label .lesson-equation-inner{font-size:19px}

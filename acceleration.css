@@ -1,0 +1,37 @@
+#kin-screen .acc-composition{position:absolute;top:42px;left:0;width:1512px;height:510px}
+#kin-screen .acc-diagram{position:absolute;left:546px;top:0;width:420px;height:510px;font:18px 'Cambria Math',math}
+#kin-screen .acc-eq{position:absolute;min-height:60px;display:flex;align-items:center;justify-content:center;color:#c8daed;font-size:24px}
+#kin-screen .acc-eq math{margin:0;max-width:100%;font-family:'Cambria Math','STIX Two Math',math}
+#kin-screen .acc-result{color:#aee6cf;font-size:28px}
+#kin-screen .acc-gold{color:#efc784}
+#kin-screen .acc-subtitle{position:absolute;top:563px;left:74px;right:74px;text-align:center;font-size:18px;line-height:1.65;color:#c4d6ec}
+#kin-screen .acc-subtitle math{display:inline math;font-family:'Cambria Math',math;font-size:1em}
+#kin-screen .acc-choice{position:absolute;top:197px;left:546px;width:420px;height:48px}
+#kin-screen .acc-choice button{background:#152d43;border:1px solid #73a99d;border-radius:5px;padding:12px 20px;color:#bfe9dd;font-size:17px;cursor:pointer}
+#kin-screen .acc-choice button:hover{background:#284d57}
+#kin-screen .acc-lesson button:focus-visible{outline:2px solid #aee6cf;outline-offset:3px}
+#kin-screen .acc-earth .acc-eq{font-size:21.5px}
+#kin-screen .acc-earth .acc-result{font-size:25px}
+
+#kin-screen .acc-choice button{position:absolute;width:172px;padding:11px 8px}
+#kin-screen .acc-choice [data-choose="earth"]{left:0}
+#kin-screen .acc-choice [data-choose="ship"]{left:200px}
+
+#kin-screen .acc-earth .acc-eq[data-born="0"]{font-size:19px}
+
+/* The fork is a dedicated reveal after the shared equation has been read. */
+#kin-screen:has(.acc-picking)>header,#kin-screen:has(.acc-picking)>footer{visibility:hidden}
+#kin-screen .acc-picking .kin-top,#kin-screen .acc-picking .kin-heading,#kin-screen .acc-picking .kin-step-title,#kin-screen .acc-picking .acc-subtitle,#kin-screen .acc-picking .kin-foot{display:none}
+#kin-screen .acc-picking .acc-stage{top:0;height:775px}
+#kin-screen .acc-picking .acc-composition{top:0;height:775px}
+#kin-screen .acc-pick-prompt{position:absolute;top:118px;left:0;right:0;text-align:center;font-size:38px;font-weight:600;letter-spacing:.025em;color:#ffe784;text-shadow:0 0 26px #eebc453d;margin:0}
+#kin-screen .acc-pick-object{position:absolute;top:265px;width:260px;padding:0;border:0;background:none;cursor:pointer;color:#d9f8ff;font:25px 'Segoe UI','Microsoft YaHei',sans-serif;border-radius:30px}
+#kin-screen .acc-pick-object svg{display:block;width:260px;height:230px;overflow:visible;filter:drop-shadow(0 0 15px #70dfff40);transition:transform .25s,filter .25s}
+#kin-screen .acc-pick-earth{left:376px}
+#kin-screen .acc-pick-ship{left:876px;color:#bef8dc}
+#kin-screen .acc-pick-object span{display:block;margin-top:10px}
+#kin-screen .acc-pick-halo{fill:none;stroke:currentColor;stroke-width:1;opacity:.55;animation:acc-beacon 2s ease-in-out infinite}
+#kin-screen .acc-pick-object:hover svg,#kin-screen .acc-pick-object:focus-visible svg{transform:scale(1.08);filter:drop-shadow(0 0 26px #7beace88)}
+#kin-screen .acc-pick-orbit{position:absolute;top:379px;left:600px;width:312px;border-top:1px dashed #426680}
+@keyframes acc-beacon{50%{opacity:.15;stroke-width:5}}
+@media(prefers-reduced-motion:reduce){#kin-screen .acc-pick-halo{animation:none}#kin-screen .acc-pick-object svg{transition:none}}
